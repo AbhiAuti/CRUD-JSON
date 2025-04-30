@@ -1,0 +1,35 @@
+<h1>Register Form</h1>
+
+<form action="" #formData="ngForm" (ngSubmit)="register(formData)">
+    <div class="form-group">
+        <label for="">ID:</label>
+        <input type="text" name="id" #id (ngModel)="id" class="form-control">
+    </div>
+    <br>
+    
+    <div class="form-group">
+        <label for="">Name:</label>
+        <input type="text" name="name" #name (ngModel)="name"  class="form-control">
+    </div>
+    <br>
+    
+    <div class="form-group">
+        <label for="">City:</label>
+        <input type="text" name="city" #city (ngModel)="city"  class="form-control">
+    </div>
+    <br>
+    
+    <div class="form-group">
+        <label for="">Salary:</label>
+        <input type="text" name="salary" #salary (ngModel)="salary"  class="form-control">
+    </div>
+    <br>
+    
+    <div class="form-group">
+        <label for="">Position:</label>
+        <input type="text" name="position" #position (ngModel)="position"  class="form-control">
+    </div>
+    <br>
+    <button type="reset" class="btn btn-warning">Reset</button>&nbsp;&nbsp;&nbsp;
+    <button class="btn btn-success">Submit</button>
+</form>

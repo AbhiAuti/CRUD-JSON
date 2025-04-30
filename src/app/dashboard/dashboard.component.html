@@ -1,0 +1,31 @@
+<h1>Employee Details</h1>
+<button routerLink="/signup" class="btn btn-warning" ><i class="bi bi-plus-square"></i>&nbsp;Add</button>
+<button class="btn btn-danger" (click)="logout()" style="float: right;"><i class="bi bi-box-arrow-right"></i>&nbsp;Logout</button>
+
+<table class="table table-bordered table-hover table-striped text-center">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>City</th>
+            <th>Salary</th>
+            <th>Position</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let e of empArray | paginate:{itemsPerPage:2,currentPage:p}">
+            <td>{{e.id}}</td>
+            <td>{{e.name}}</td>
+            <td>{{e.city}}</td>
+            <td>{{e.salary}}</td>
+            <td>{{e.position}}</td>
+            <td>
+                <button (click)="delete(e.id)" class="btn btn-danger"><i class="bi bi-trash3-fill"></i></button>&nbsp;&nbsp;
+                <button (click)="update(e.id)" class="btn btn-success"><i class="bi bi-pencil-square"></i></button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<pagination-controls style="float: right;" (pageChange)="p=$event"></pagination-controls>
