@@ -33,6 +33,24 @@ npm install
 ### 3  Run Angular Application
 ng serve
 
-📌 Author
-Abhishek Auti
-GitHub: @AbhiAuti
+---
+
+📣 About This Project
+This is a simple Employee Management System built as my first Angular project to practice:
+
+Angular Components & Services
+
+HTTPClient for REST API communication
+
+Two-way data binding
+
+CRUD operations
+
+Routing and navigation
+
+---
+
+## 📌 Author
+
+**Abhishek Auti**  
+GitHub: [@AbhiAuti](https://github.com/AbhiAuti)
